@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+   <meta charset="UTF-8" />
+   <title>Beer World!</title>
+   <link rel="stylesheet" type="text/css" href="css/normalize1.css">
+    <style>
+      body {
+
+                background: url('img/beerbackground.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center; 
+                background-color: #c5c8cc;
+      }
+</style>
+<script src="js/registration.js"></script>
+</head>
+<body id = 'background'>
+   <div class="container">
+      <header>
+        <h1>Beer Delivery Canada<img class="headerlogo" src = "img/delivery.jpg"/></h1>
+      </header>
+
+      <aside>
+        <h1>Beer Trip!</h1>
+         <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="registration.html"> Registration </a> </li>
+            <li> <a href="catalog.html"> Catalog </a> </li>
+         </ul>
+        
+      </aside>
+
+
+     <section class="mainRegistration">
+        <h1> Regisration </h1>
+        <p>Account Information<p>
+            <form action ="https://httpbin.org/post" method ="post" onsubmit = "return Validation();">
+                User Name <input type="text" size="20" name="uname" id="uname" required="required"/><br /><br />
+                Password <input type="password" name="pword" id="pword" required="required"/><br /><br />
+                Confrimed Password <input type="password" name="cfpword" id="cfpword" required="required"/><br /><br /> 
+                Province <input type="text" list="province" name="province" value ="Ontario"  required="required"/>
+                      <datalist id="province">
+                          <option value="Alberta">AB</option>
+                          <option value="British Columbia">BC</option>
+                          <option value="Manitoba">MB</option>
+                          <option value="New Brunswick">NB</option>
+                          <option value="Newfoundland">NF</option>
+                          <option value="Nova Scotia">NS</option>
+                          <option value="Ontario">ON</option>
+                          <option value="Prince Edward Is.">PE</option>
+                          <option value="Quebec">QC</option>
+                          <option value="Saskatchewan">SK</option>
+                          <option value="Northwest Territories">NW</option>
+                          <option value="Nunavut">NU</option>
+                          <option value="Yukon">YU</option>
+                      </datalist><br /><br />
+                Street Name <input type="text" name="stname" id="stname" required="required" placeholder = "ex) Tamworth Road" /><br /><br />
+                Email <input type="email" name="email" id="email" required="required" placeholder="khkim12@myseneca.ca"/><br /><br />   
+                Phone Number <input type="tel" name="pNumber" id="pNumber" required="required" placeholder="ex) 647-832-0098"/><br /><br />  
+                Zip Code <input type="text" name="zipCode" id="zipCode" required="required" placeholder="ex) M2N2N7"/><br /><br />
+                City <input type="text" name="city" id="city" required="required" placeholder="ex) Toronto"/><br /><br /> 
+                
+
+                      <input type="submit" value="Submit The Information">
+                      <input type="reset" value="Clear The Information">
+                      
+                      <!--Hidden type !-->
+                      <input type="hidden" name="lname" id="lname" value="Kim"/><br /><br />
+                      <input type="hidden" name="studentId" id="studentId" value="056-845-100" />
+            </form>
+      </section>
+	  <section id="registrationAlert">
+      <aside>
+        <h3>Pay Attention!! <h4>
+        <p id= "ErrorMessage"></p>
+        </aside>
+	  </section>
+      <footer>
+        <h2> &copy; 2017 KYUNGHOON KIM (056-845-100) </h2>
+      </footer>
+   </div>
+</body>
+
+</html>
+

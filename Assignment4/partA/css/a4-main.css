@@ -1,0 +1,88 @@
+/* Place all of your CSS Code in this file */
+
+/*google font url (font-family: Boogaloo)*/
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+
+
+
+/* font color */
+body {
+
+    color: #660000;
+}
+
+/* nav and footer's background and font color */
+nav, footer{
+
+    background-color: #330000;
+    color: #FFFF00;
+}
+
+/* header with more than 2 different properties*/
+header {
+    
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+}
+
+
+/* Style the <h1 class="app-title"></h1> using at least 3 properties*/
+h1.app-title{
+
+    font-family: 'Boogaloo', cursive, Monotype;
+    font-size: 3em;
+    color: #b81111; 
+    }
+
+    /*at least 3 properties*/
+div.main-table-container{
+
+    max-height: 668px;
+    overflow-y: scroll;
+    background-color: #ffe4cd;
+}
+
+/*  Add at least 4 style properties to the <th></th> elements */
+table.main-table-top th{
+
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d07c32;
+    border: 5px double #70804f;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Add at least 4 style properties to the <td></td> elements*/
+table.main-table td{
+
+    border:5px double #70804f;
+    padding: 5px;
+    text-align: left; 
+    vertical-align: middle;    
+}
+
+/* Add at least 2 properties to all <span></span> elements*/
+table.main-table p span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: KYUNGHOON KIM || Student ID: 056-845-100 || Date: July 20th, 2017 
+* 
+********************************************************************************/
